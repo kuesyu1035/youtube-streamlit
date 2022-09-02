@@ -1,6 +1,10 @@
 import streamlit as st
 import time
 
+@app.route("/hello")
+def hello_world():
+    return "Hello world"
+
 st.title('Streamlit 入門')
 
 st.write('プログレスバーの表示')
